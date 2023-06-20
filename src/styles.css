@@ -1,0 +1,8 @@
+* {
+  scroll-behavior: smooth;
+}
+
+#leaderboard__container,
+#add-score__container {
+  width: 40%;
+}
