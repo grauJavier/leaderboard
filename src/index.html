@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Leaderboard List App</title>
+  </head>
+
+  <body>
+    <main>
+      <section id="leaderboard" class="p-5">
+        <h1 id="leaderboard__title" class="mb-5">Leaderboard</h1>
+        <div id="leaderboard__body" class="d-flex flex-row justify-content-center gap-5">
+          <div id="leaderboard__container" class="d-flex flex-column gap-2">
+            <div id="recent-scores" class="d-flex flex-row gap-2">
+              <h2 id="recent-scores__title">Recent scores</h2>
+              <button id="recent-scores__refresh-btn" class="btn btn-primary" type="button">Refresh</button>
+            </div>
+            <div id="leaderboard__scores">
+              <table id="leaderboard__score-list" class="table table-striped border">
+                <tr>
+                  <td class="leaderboard__score-item">Name: 100</td>
+                </tr>
+                <tr>
+                  <td class="leaderboard__score-item">Name: 20</td>
+                </tr>
+                <tr>
+                  <td class="leaderboard__score-item">Name: 50</td>
+                </tr>
+                <tr>
+                  <td class="leaderboard__score-item">Name: 78</td>
+                </tr>
+                <tr>
+                  <td class="leaderboard__score-item">Name: 125</td>
+                </tr>
+                <tr>
+                  <td class="leaderboard__score-item">Name: 77</td>
+                </tr>
+                <tr>
+                  <td class="leaderboard__score-item">Name: 42</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="add-score__container">
+            <h2 id="add-score__title">Add your score</h2>
+            <form class="d-flex flex-column gap-1 align-items-end">
+              <input type="text" placeholder="Your name" id="add-score__name-input" class="w-100" />
+              <input type="number" placeholder="Your score" id="add-score__score-input" class="w-100" />
+              <button type="button" id="add-score__submit-btn" class="btn btn-primary w-50">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
