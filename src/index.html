@@ -28,7 +28,13 @@
               <button id="recent-scores__refresh-btn" class="btn btn-primary" type="button">Refresh</button>
             </div>
             <div id="leaderboard__scores">
-              <table id="leaderboard__score-list" class="table table-striped border"></table>
+              <table id="leaderboard__score-list" class="table table-striped border">
+                <tbody>
+                  <tr id="leaderboard__empty-msg" class="d-none">
+                    <td class="text-center fst-italic">The leaderboard is empty</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div id="add-score__container">
