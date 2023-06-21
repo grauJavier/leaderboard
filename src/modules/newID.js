@@ -1,7 +1,7 @@
 const newID = async () => {
-  let hex = Math.random().toString(16).slice(2);
+  const hex = Math.random().toString(16).slice(2);
 
-  let data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+  const data = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -11,7 +11,7 @@ const newID = async () => {
     }),
   });
 
-  let output = await data.json();
+  const output = await data.json();
   localStorage.gameID = await output.result.slice(14, -7);
 };
 

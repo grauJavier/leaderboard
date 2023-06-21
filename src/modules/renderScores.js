@@ -2,9 +2,8 @@ const renderScores = (name, score) => {
   const scoreList = document.querySelector('#leaderboard__score-list tbody');
 
   // Adding previous scores to the newRow as a backup
-  let newRow =
-    scoreList.innerHTML +
-    `
+  const newRow = `${scoreList.innerHTML
+  }
   <tr>
     <td class="leaderboard__score-item">${name}: ${score}</td>
   </tr>`;

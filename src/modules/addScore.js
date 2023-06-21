@@ -1,5 +1,5 @@
 const addScore = (name, score) => {
-  let gameID = localStorage.getItem('gameID');
+  const gameID = localStorage.getItem('gameID');
   fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`, {
     method: 'POST',
     headers: {
@@ -7,7 +7,7 @@ const addScore = (name, score) => {
     },
     body: JSON.stringify({
       user: name,
-      score: score,
+      score,
     }),
   });
 };

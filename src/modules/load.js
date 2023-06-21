@@ -4,8 +4,8 @@ import newID from './newID.js';
 import renderScores from './renderScores.js';
 
 const load = async () => {
-  let gameID = localStorage.getItem('gameID') || (await newID());
-  let loaderArr = await getScores(gameID);
+  const gameID = localStorage.getItem('gameID') || (await newID());
+  const loaderArr = await getScores(gameID);
 
   if (loaderArr.length) {
     loaderArr.forEach((data) => {
