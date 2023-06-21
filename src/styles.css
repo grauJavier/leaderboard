@@ -6,3 +6,7 @@
 #add-score__container {
   width: 40%;
 }
+
+#leaderboard__score-list {
+  table-layout: fixed;
+}
