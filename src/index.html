@@ -28,37 +28,15 @@
               <button id="recent-scores__refresh-btn" class="btn btn-primary" type="button">Refresh</button>
             </div>
             <div id="leaderboard__scores">
-              <table id="leaderboard__score-list" class="table table-striped border">
-                <tr>
-                  <td class="leaderboard__score-item">Name: 100</td>
-                </tr>
-                <tr>
-                  <td class="leaderboard__score-item">Name: 20</td>
-                </tr>
-                <tr>
-                  <td class="leaderboard__score-item">Name: 50</td>
-                </tr>
-                <tr>
-                  <td class="leaderboard__score-item">Name: 78</td>
-                </tr>
-                <tr>
-                  <td class="leaderboard__score-item">Name: 125</td>
-                </tr>
-                <tr>
-                  <td class="leaderboard__score-item">Name: 77</td>
-                </tr>
-                <tr>
-                  <td class="leaderboard__score-item">Name: 42</td>
-                </tr>
-              </table>
+              <table id="leaderboard__score-list" class="table table-striped border"></table>
             </div>
           </div>
           <div id="add-score__container">
             <h2 id="add-score__title">Add your score</h2>
-            <form class="d-flex flex-column gap-1 align-items-end">
-              <input type="text" placeholder="Your name" id="add-score__name-input" class="w-100" required/>
-              <input type="number" placeholder="Your score" id="add-score__score-input" class="w-100" required/>
-              <button type="button" id="add-score__submit-btn" class="btn btn-primary w-50">Submit</button>
+            <form id="add-score__form" class="d-flex flex-column gap-1 align-items-end">
+              <input type="text" placeholder="Your name" id="add-score__name-input" class="w-100" required />
+              <input type="number" placeholder="Your score" id="add-score__score-input" class="w-100" required />
+              <button type="submit" id="add-score__submit-btn" class="btn btn-primary w-50">Submit</button>
             </form>
           </div>
         </div>
