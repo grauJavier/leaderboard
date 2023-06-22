@@ -68,7 +68,7 @@ The **Leaderboard List App** project is aimed at helping developers enhance thei
 
 <!-- Live Demo -->
 # 🚀 Live Demo <a name="live-demo"></a>
-To access the Live Demo [Click here!](https://graujavier.github.io/leaderboard/)
+To access the Live Demo [Click here!](https://graujavier.github.io/leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +106,7 @@ No run test is available.
 
 ### Deployment
 
-Deployment link: https://graujavier.github.io/leaderboard/
+Deployment link: https://graujavier.github.io/leaderboard/dist/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
